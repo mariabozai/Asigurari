@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{774EC3FF-8B2F-4A4B-894E-C97CD626DD5D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Asigurari</RootNamespace>
+    <AssemblyName>Asigurari</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddRcaData.cs" />
+    <Compile Include="Casco Insurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Casco Insurance.Designer.cs">
+      <DependentUpon>Casco Insurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functie.Designer.cs">
+      <DependentUpon>Functie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Health.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Health.Designer.cs">
+      <DependentUpon>Health.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HealthInsurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HealthInsurance.Designer.cs">
+      <DependentUpon>HealthInsurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LifeInsurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LifeInsurance.Designer.cs">
+      <DependentUpon>LifeInsurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionalHousingInsurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionalHousingInsurance.Designer.cs">
+      <DependentUpon>OptionalHousingInsurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PADInsurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PADInsurance.Designer.cs">
+      <DependentUpon>PADInsurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RCAInsurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RCAInsurance.Designer.cs">
+      <DependentUpon>RCAInsurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup.Designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelInsurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelInsurance.Designer.cs">
+      <DependentUpon>TravelInsurance.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Casco Insurance.resx">
+      <DependentUpon>Casco Insurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functie.resx">
+      <DependentUpon>Functie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Health.resx">
+      <DependentUpon>Health.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HealthInsurance.resx">
+      <DependentUpon>HealthInsurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LifeInsurance.resx">
+      <DependentUpon>LifeInsurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionalHousingInsurance.resx">
+      <DependentUpon>OptionalHousingInsurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PADInsurance.resx">
+      <DependentUpon>PADInsurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RCAInsurance.resx">
+      <DependentUpon>RCAInsurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelInsurance.resx">
+      <DependentUpon>TravelInsurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\logo.png" />
+    <Content Include="Resources\fundal2Bani.png" />
+    <Content Include="Resources\fundalBani.png" />
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
